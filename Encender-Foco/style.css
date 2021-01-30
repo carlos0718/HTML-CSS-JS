@@ -1,0 +1,39 @@
+#container{
+    text-align: center;
+    background-color: burlywood;
+   /*  margin-top: 100px; */
+}
+#img-on{
+    display:none;
+}
+#img-off{
+    display: auto;
+    width: 10cm;
+    height: 10cm;
+}
+#btn-on, #btn-off{
+    margin: 20px;
+    color: darkkhaki;
+    background-color:honeydew;
+    border-radius: 10px;
+    font-size: 50px;
+
+}
+header{
+    background-color: skyblue;
+    text-align: center;
+    padding: 2%;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    background-color:skyblue ;
+    text-align: center;
+    height: 120PX;
+    padding: 2%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.img-footer{
+    width: 40px;
+}
