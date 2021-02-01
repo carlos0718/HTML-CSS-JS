@@ -1,0 +1,18 @@
+body{
+    background-image: url('https://1.bp.blogspot.com/-TywIBY0U4Qo/ViaFndveCdI/AAAAAAAAJoU/Irzpk1Z1f4A/s1600/star%2Bwars%2Bwallpaper%2B23.jpg');
+    background-color: transparent;
+
+}
+.container{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50;
+    font-weight: bold;
+    color: white;
+    opacity: 0.8;
+    margin-top: 50px;
+    margin-left: 32%;
+}
+.input-size{
+    width: 15cm;
+    border-radius: 10px;
+}
