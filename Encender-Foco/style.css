@@ -3,12 +3,15 @@
     background-color: burlywood;
    /*  margin-top: 100px; */
 }
-#img-on{
-    display:none;
+div img #img-on{
+    display:flex;
+    width: 10cm;
+    height: 10cm;
+    margin: 0px;
 }
 #img-off{
     display: auto;
-    width: 10cm;
+    width: 9cm;
     height: 10cm;
 }
 #btn-on, #btn-off{

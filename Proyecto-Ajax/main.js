@@ -1,33 +1,34 @@
-let bntBuscar = document.getElementById('btn-search');
-let htmlForm = '';
+let btnBuscar = document.getElementById('btn-search');
 
-let nombre = document.getElementById('input-name');
-let heigth = document.getElementById('input-height');
-let gender = document.getElementById('input-gender');
-let hair = document.getElementById('input-hair');
-let eye = document.getElementById('input-eye');
-let url = document.getElementById('input-url');
-let planet = document.getElementById('input-planet');
-let number = document.getElementById('input-number');
-let contenidoApi = '';
+let nombre = $('#input-name');//document.getElementById('input-name');
+let height = $('#input-height')//document.getElementById('input-height');
+let gender = $('#input-gender')//document.getElementById('input-gender');
+let hair = $('#input-hair')//document.getElementById('input-hair');
+let eye = $('#input-eye')//document.getElementById('input-eye');
+let planet = $('#input-planet')//document.getElementById('input-planet');
 
-bntBuscar.addEventListener('click',cargarDatos);
-
+btnBuscar.addEventListener('click',cargarDatos());
 function cargarDatos(){
 
+    // se usa el random para que en cada evento clck se genere un nuevo personaje
+    let i = Math.round(Math.random() * 80);
+    
     $.ajax({
-        tyep: 'GET',
-        croosDomain:true,
-        url: "https://swapi.dev/api/people/",
+        type: 'GET',
+        crossDomain:true,
+        url:`https://swapi.dev/api/people/${i}`, // se usa string template para insertar parametros en la url
         dataType: "json",
         success: function (data) {
-            /* console.log(data); */
 
-            contenidoApi = data;
-
-            for (const i in contenidoApi) {
-                nombre.innerText=`${contenidoApi[i].name}`
-            }
+            console.log(data);
+            /* localStorage.data = JSON.stringify(data) */
+           
+            nombre.val(data.name);
+            height.val(data.height+'cm');
+            gender.val(data.gender);
+            hair.val(data.hair_color);
+            eye.val(data.eye_color);
+            planet.val(data.homeworld);
         }
     });
 }
