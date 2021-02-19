@@ -1,0 +1,25 @@
+h1{
+    color:#e9530d ;
+    text-align: center;
+    font-size: 60px;
+}
+td{
+    text-indent: 5cm;
+}
+body{
+    background-color:rgba(251, 255, 0, 0.844) ;
+    /* background-image:url( "https://pm1.narvii.com/6462/99b9816623a5175973e2e0e9f46b80a8b6fc1be9_00.jpg");
+    opacity: 10;    */
+}
+.fondo{
+    width: 1050px;
+    border: 50px ;
+    padding: 60px;
+    margin: 10px 80px;
+    background-image:url( "https://pm1.narvii.com/6462/99b9816623a5175973e2e0e9f46b80a8b6fc1be9_00.jpg");
+    opacity: 0.70;
+}
+.logo image{
+    width: 150px;
+    height: 150px;
+}
